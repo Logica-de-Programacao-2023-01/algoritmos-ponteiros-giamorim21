@@ -19,9 +19,10 @@ func alterarBook(p *Book) {
 func main() {
 	livro1 := Book{
 		titulo: "Maus",
-		autor:  " Art Spiegelman",
+		autor:  "Art Spiegelman",
 	}
 	alterarBook(&livro1)
+	fmt.Println(livro1.autor)
 	fmt.Println(livro1.titulo)
 
 	livro2 := Book{
@@ -29,5 +30,6 @@ func main() {
 		autor:  "Anonimo",
 	}
 	alterarBook(&livro2)
+	fmt.Println(livro2.autor)
 	fmt.Println(livro2.titulo)
 }

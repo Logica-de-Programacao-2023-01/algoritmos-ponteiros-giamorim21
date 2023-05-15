@@ -15,7 +15,7 @@ func atualizarNumero(ptr *int) {
 }
 
 func main() {
-	x := 5
+	x := 10
 	var ptr *int = &x
 	atualizarNumero(ptr)
 	fmt.Println(*ptr)
